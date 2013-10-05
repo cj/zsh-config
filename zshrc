@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="gentoo"
+export ZSH_THEME="cj"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github git-flow cap gem lol zsh-syntax-highlighting bundler heroku vim)
+plugins=(git github git-flow cap gem lol zsh-syntax-highlighting heroku vim rvm ruby history-substring-search)
 
 source /etc/profile
 source $ZSH/oh-my-zsh.sh
