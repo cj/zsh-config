@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github git-flow cap gem lol zsh-syntax-highlighting vim rvm ruby history-substring-search)
+plugins=(git git-flow cap gem lol zsh-syntax-highlighting vim rvm ruby history-substring-search hub)
 
 source /etc/profile
 source $ZSH/oh-my-zsh.sh
@@ -70,12 +70,12 @@ unset RUBYOPT
 cd . # to rvm reload
 
 if [[ -x `which hitch` ]]; then
-	hitch() {
-		command hitch "$@"
-		if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-	}
-	alias unhitch='hitch -u'
-	hitch
+  hitch() {
+    command hitch "$@"
+    if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+  }
+  alias unhitch='hitch -u'
+  hitch
 fi
 
 alias nogit="disable_git_prompt_info; compdef -d git"
@@ -84,3 +84,16 @@ alias npm_bin="PATH=`pwd`/node_modules/.bin:$PATH; rehash"
 
 PATH=~/bin/:~/node_modules/.bin/:$PATH
 export EDITOR=vim
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/share/npm/bin:$PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
+
+export PATH=$HOME/local/bin:$PATH
+export NODE_PATH=$HOME/local/lib/node_modules
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+eval "$(hub alias -s)"
