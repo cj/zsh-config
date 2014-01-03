@@ -3,7 +3,7 @@ Installation
 
 To install, run
 
-    git clone git://github.com/nviennot/zsh-config.git ~/.zsh
+    git clone git://github.com/cj/zsh-config.git ~/.zsh
     cd ~/.zsh
     make install
 
