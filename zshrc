@@ -97,3 +97,8 @@ export NODE_PATH=$HOME/local/lib/node_modules
 export PATH="/usr/local/heroku/bin:$PATH"
 
 eval "$(hub alias -s)"
+# eval "$(direnv hook zsh)"
+alias rspec='bin/rspec'
+alias rails='bin/rails'
+alias rake='bin/rake'
+alias cucumber='bin/cucumber'
