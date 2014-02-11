@@ -96,6 +96,8 @@ export NODE_PATH=$HOME/local/lib/node_modules
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
 eval "$(hub alias -s)"
 # eval "$(direnv hook zsh)"
 alias rspec='bin/rspec'
