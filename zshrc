@@ -105,5 +105,5 @@ alias rails='bin/rails'
 alias rake='bin/rake'
 alias cucumber='bin/cucumber'
 alias cuba='bin/cuba'
-alias cuba='bin/cutest'
+alias cutest='bin/cutest'
 TMUX=true
