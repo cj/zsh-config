@@ -106,4 +106,7 @@ alias rake='bin/rake'
 alias cucumber='bin/cucumber'
 alias cuba='bin/cuba'
 alias cutest='bin/cutest'
-TMUX=true
+alias vimfb='/usr/local/bin/vim'
+alias c='conjoin'
+# causing issues
+# TMUX=true
