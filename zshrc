@@ -97,3 +97,5 @@ export NODE_PATH=$HOME/local/lib/node_modules
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
