@@ -55,12 +55,12 @@ ZSH_HIGHLIGHT_STYLES+=(
   assign                        'none'
 )
 
-#bindkey "\e[H" beginning-of-line
-#bindkey "\e[F" end-of-line
-bindkey "\e[1;5D" backward-word
-bindkey "\e[1;5C" forward-word
-bindkey "^[OD" backward-word
-bindkey "^[OC" forward-word
+# bindkey "\e[H" beginning-of-line
+# bindkey "\e[F" end-of-line
+# bindkey "\e[1;5D" backward-word
+# bindkey "\e[1;5C" forward-word
+# bindkey "^[OD" backward-word
+# bindkey "^[OC" forward-word
 
 alias noh="unsetopt sharehistory"
 
@@ -97,16 +97,3 @@ export NODE_PATH=$HOME/local/lib/node_modules
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-
-eval "$(hub alias -s)"
-# eval "$(direnv hook zsh)"
-alias rspec='bin/rspec'
-alias rails='bin/rails'
-alias rake='bin/rake'
-alias cucumber='bin/cucumber'
-alias cuba='bin/cuba'
-alias cutest='bin/cutest'
-alias vimfb='/usr/local/bin/vim'
-alias c='conjoin'
-# causing issues
-# TMUX=true
