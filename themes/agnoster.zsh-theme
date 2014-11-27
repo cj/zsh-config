@@ -48,7 +48,8 @@ prompt_segment() {
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
     # echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-    echo -n " %{%k%F{$CURRENT_BG}%}"
+    # echo -n " %{%k%F{$CURRENT_BG}%}"
+    echo -n " %{%k%F{black}%}"
   else
     echo -n "%{%k%}"
   fi
