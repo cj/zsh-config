@@ -109,6 +109,7 @@ PERL_MB_OPT="--install_base \"/home/cj/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/cj/perl5"; export PERL_MM_OPT;
 source ~/.phpbrew/bashrc
 alias git=hub
+alias rbenv install='RUBY_CONFIGURE_OPTS=--with-readline-dir="/usr/lib/libreadline.so" rbenv install'
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
